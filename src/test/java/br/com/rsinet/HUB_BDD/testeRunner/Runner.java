@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		features = "features",
 		glue = {"br.com.rsinet.HUB_BDD.stepDefinition" }, 
 		monochrome = true, 
-		snippets = SnippetType.CAMELCASE 
+		snippets = SnippetType.CAMELCASE
 )
 public class Runner {
 

@@ -69,10 +69,11 @@ public class HomeScreen {
 		element = driver.findElement(By.id("com.Advantage.aShopping:id/editTextSearch"));
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
-		element.sendKeys(texto);
-		
-		element2 = driver.findElement(By.id("com.Advantage.aShopping:id/imageViewSearch"));
-		element2.click();
-		
+		element.sendKeys(texto);	
+	}
+	
+	public void clicandoParaPesquisar() {
+		element = driver.findElement(By.id("com.Advantage.aShopping:id/imageViewSearch"));
+		element.click();
 	}
 }

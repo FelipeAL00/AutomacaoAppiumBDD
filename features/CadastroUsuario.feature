@@ -9,7 +9,7 @@ Funcionalidade: Cadastro de usuario
 
   @cadastroComSucesso
   Esquema do Cenario: Cadastro com sucesso
-    Quando informo o username "<Username>"
+    E informo o username "<Username>"
     E informo o email "<email>"
     E informo a senha "<senha>"
     E informo a confirmacao da senha "<senhaConfirm>"
@@ -27,11 +27,11 @@ Funcionalidade: Cadastro de usuario
 
     Exemplos: 
       | Username | email                       | senha   | senhaConfirm | primeiroNome | ultimoNome | telefone     | Pais   | estado    | endereco       | cidade          | CEP       |
-      | BRUN343  | felipe.almeidaa14@gmail.com | Felipe2 | Felipe2      | Felipe       | Silva      | (11)94444223 | Brazil | São Paulo | Rua Bueno, 188 | Taboão da Serra | 06784-200 |
+      | BRUN1009 | felipe.almeidaa14@gmail.com | Felipe2 | Felipe2      | Felipe       | Silva      | (11)94444223 | Brazil | São Paulo | Rua Bueno, 188 | Taboão da Serra | 06784-200 |
 
   @cadastroComFalha
   Esquema do Cenario: Cadastro com falha
-    Quando informo o username "<Username>"
+    E informo o username "<Username>"
     E informo o email "<email>"
     E informo a senha "<senha>"
     E informo a confirmacao da senha "<senhaConfirm>"
@@ -44,7 +44,6 @@ Funcionalidade: Cadastro de usuario
     E informo a cidade "<cidade>"
     E informo o CEP "<CEP>"
     E clico em não receber ofertas e promocoes
-    Quando clico em não receber ofertas e promocoes
     Entao nao consigo me registrar porque as senhas estao diferentes
 
     Exemplos: 

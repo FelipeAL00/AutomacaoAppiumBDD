@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import br.com.rsinet.HUB_BDD.pageFactory.HomeScreen;
 import br.com.rsinet.HUB_BDD.pageFactory.RegisterScreen;
 import br.com.rsinet.HUB_BDD.picoContainer.ContextoTeste;
-import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import io.appium.java_client.AppiumDriver;
@@ -29,13 +28,10 @@ public class CadastroUsuario {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Dado("^que estou no menu da tela home$")
-	public void queEstouNoMenuDaTelaHome() {
-		homeScreen.clickMenu();
-	}
-
+	
 	@Quando("^clico no botao logar$")
 	public void clicoNoBotaoLogar() {
+		homeScreen.clickMenu();
 		homeScreen.clickLogin();
 	}
 
