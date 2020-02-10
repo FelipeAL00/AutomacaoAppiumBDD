@@ -21,8 +21,8 @@ Funcionalidade: Pesquisa Pela Lupa
   Esquema do Cenario: Pesquisa com falha
     Quando pesquiso pelo modelo "<modelo>"
     E clico na lupa
-    Entao aparecerá uma mensagem de erro "<mensagem>"
+    Entao aparecera uma mensagem de produto nao encontrado "<modelo>"
 
     Exemplos: 
-      | modelo       | mensagem                              |
-      | Dell Supremm | - No results for \\"Dell Supremm\\" - |
+      | modelo       |
+      | Dell Supremm |

@@ -48,8 +48,9 @@ public class BuscaPelaLupa {
 		assertTrue(driver.getPageSource().contains(texto.toUpperCase()));
 	}
 
-	@Entao("^aparecerá uma mensagem de erro \"([^\"]*)\"Dell Supremm\"([^\"]*)\"$")
-	public void apareceráUmaMensagemDeErroDellSupremm(String texto) {
-		assertTrue(driver.getPageSource().contains(texto));
+	@Entao("^aparecera uma mensagem de produto nao encontrado \"([^\"]*)\"$")
+	public void apareceraUmaMensagemDeProdutoNaoEncontrado(String texto) {
+		
+		assertTrue(searchScreen.capturarMessage(texto));
 	}
 }

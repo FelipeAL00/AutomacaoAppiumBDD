@@ -111,5 +111,13 @@ public class ConfigFileReader {
 		
 		throw new RuntimeException("Path não está especificado em configuration.properties");
 	}
+
+	public String getReportConfigPath() {
+		String path = properties.getProperty("reportPath");
+		if(path != null)
+			return path;
+		
+		throw new RuntimeException("Path não está especificado em configuration.properties");
+	}
 		
 }

@@ -24,6 +24,10 @@ public class SearchScreen {
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewApply")
 	private MobileElement aplicarFiltro;
 	
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewNoProductsToShow")
+	private MobileElement elementParaEsperaDaMensagemNoResults;
+	
+	
 	
 	public SearchScreen(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
@@ -69,6 +73,14 @@ public class SearchScreen {
 			element.click();
 
 		}
+	}
+
+	public boolean capturarMessage(String texto) {
+		wait.until(ExpectedConditions.textToBePresentInElement(elementParaEsperaDaMensagemNoResults, "- No results for \"" + texto + "\" -" ));
+		if(driver.getPageSource().contains("- No results for \"" + texto + "\" -")) {
+			return true;
+		}
+		return false;
 	}
 
 }
