@@ -1,8 +1,8 @@
 package br.com.rsinet.HUB_BDD.manager;
 
-import br.com.rsinet.HUB_BDD.pageFactory.HomeScreen;
-import br.com.rsinet.HUB_BDD.pageFactory.RegisterScreen;
-import br.com.rsinet.HUB_BDD.pageFactory.SearchScreen;
+import br.com.rsinet.HUB_BDD.screenFactory.HomeScreen;
+import br.com.rsinet.HUB_BDD.screenFactory.RegisterScreen;
+import br.com.rsinet.HUB_BDD.screenFactory.SearchScreen;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 

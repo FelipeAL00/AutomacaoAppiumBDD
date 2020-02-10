@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-import br.com.rsinet.HUB_BDD.pageFactory.HomeScreen;
-import br.com.rsinet.HUB_BDD.pageFactory.RegisterScreen;
 import br.com.rsinet.HUB_BDD.picoContainer.ContextoTeste;
+import br.com.rsinet.HUB_BDD.screenFactory.HomeScreen;
+import br.com.rsinet.HUB_BDD.screenFactory.RegisterScreen;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import io.appium.java_client.AppiumDriver;
