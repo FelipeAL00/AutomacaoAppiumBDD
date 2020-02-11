@@ -1,5 +1,7 @@
 package br.com.rsinet.HUB_BDD.screenFactory;
 
+import java.time.Duration;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -125,6 +127,7 @@ public class RegisterScreen {
 	}
 
 	public void passarCidade(String texto) {
+		wait.pollingEvery(Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(cidade));
 		cidade.click();
 		cidade.sendKeys(texto);

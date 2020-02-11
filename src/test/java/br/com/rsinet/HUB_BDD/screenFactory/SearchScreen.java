@@ -57,8 +57,6 @@ public class SearchScreen {
 			element =((AndroidDriver<MobileElement>) driver)
 					.findElementByAndroidUIAutomator("new UiSelector().text(\"" + texto + "\")");
 
-			wait.until(ExpectedConditions.elementToBeClickable(element));
-
 			element.click();
 
 		} catch (NoSuchElementException e) {

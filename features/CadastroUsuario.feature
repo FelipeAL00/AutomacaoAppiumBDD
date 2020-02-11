@@ -27,7 +27,7 @@ Funcionalidade: Cadastro de usuario
 
     Exemplos: 
       | Username | email                       | senha   | senhaConfirm | primeiroNome | ultimoNome | telefone     | Pais   | estado    | endereco       | cidade          | CEP       |
-      | BRUN1011 | felipe.almeidaa14@gmail.com | Felipe2 | Felipe2      | Felipe       | Silva      | (11)94444223 | Brazil | São Paulo | Rua Bueno, 188 | Taboão da Serra | 06784-200 |
+      | BRUN1014 | felipe.almeidaa14@gmail.com | Felipe2 | Felipe2      | Felipe       | Silva      | (11)94444223 | Brazil | São Paulo | Rua Bueno, 188 | Taboão da Serra | 06784-200 |
 
   @cadastroComFalha
   Esquema do Cenario: Cadastro com falha
