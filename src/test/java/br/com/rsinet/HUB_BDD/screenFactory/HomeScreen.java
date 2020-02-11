@@ -2,6 +2,7 @@ package br.com.rsinet.HUB_BDD.screenFactory;
 
 import java.time.Duration;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -56,9 +57,15 @@ public class HomeScreen {
 	}
 
 	public void clickMenu() {
-		wait.pollingEvery(Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(acessoMenu));
-		acessoMenu.click();
+		try {
+			wait.pollingEvery(Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(acessoMenu));
+			acessoMenu.click();
+		} catch (StaleElementReferenceException e) {
+			acoes.scrollName("TABLETS");
+			wait.until(ExpectedConditions.elementToBeClickable(acessoMenu));
+			acessoMenu.click();
+		}
 	}
 	
 	public void clickLogin() {
